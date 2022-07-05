@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?lanscape');
+}
+.card{
+    background: #000000e3;
+    color: aliceblue;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    margin: 0.4rem;
+    border-radius: 50%;
+    border: none;
+    height: 2.9rem;
+    width: 2.9rem;
+    outline: none;
+    background-color: #b4b3b32b;
+    color: white;
+}
+button:hover{
+    background: #c7c1c160;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #8f8f8f21;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100%-100px);
+}
+h1.temp{
+    margin:0.4em 0em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 30px;
+    position: relative;
+}
+.weather.loading.after{
+    visibility: visible;
+    content: "Loading....";
+    color: beige;
+    position: absolute;
+    top: 0;
+}
